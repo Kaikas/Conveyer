@@ -8,7 +8,7 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getUsers() {
-    return this.http.get('https://jsonplaceholder.typicode.com/users')
+  getBlueprints() {
+    return this.http.get('https://esi.tech.ccp.is/latest/markets/10000002/orders/?datasource=tranquility&order_type=sell&type_id=16670')
   }
 }

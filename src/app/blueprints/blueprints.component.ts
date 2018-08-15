@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-blueprints',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlueprintsComponent implements OnInit {
 
-  constructor() { }
+  blueprints$: Object;
+
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.getBlueprints().subscribe(
+     data => this.blueprints$ = data 
+    )
   }
 
 }
