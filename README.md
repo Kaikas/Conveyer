@@ -1,6 +1,6 @@
 # Conveyer
 
-##Quickinstall guide
+## Quickinstall guide
 
 * git clone
 * pacman -S npm
