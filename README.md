@@ -1,5 +1,7 @@
 # Conveyer
 
+##Quickinstall guide
+
 * git clone
 * pacman -S npm
 * npm install -g @angular/cli
