@@ -1,6 +1,8 @@
 # Conveyer
 
-## Quickinstall guide
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+
+## Quickinstall guide on Manjaro or Arch
 
 * git clone
 * pacman -S npm
@@ -8,8 +10,6 @@
 * cd Conveyer
 * npm install
 * ng serve -o
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
 ## Development server
 
