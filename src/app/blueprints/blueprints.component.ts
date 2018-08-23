@@ -10,12 +10,16 @@ import { Observable } from 'rxjs';
 export class BlueprintsComponent implements OnInit {
 
   blueprints$: Object;
+  typeIDs$: Object;
 
   constructor(private data: DataService) { }
 
   ngOnInit() {
     this.data.getBlueprints().subscribe(
      data => this.blueprints$ = data 
+    )
+    this.data.getTypeIDs().subscribe(
+     data => this.typeIDs$ = data 
     )
   }
 
